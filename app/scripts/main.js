@@ -4,7 +4,10 @@ $(function () {
   $('.accordion__content').on('hide.bs.collapse', function () {
     const $this = $(this)
     const $item = $this.parents('.accordion__item')
+    const itemPosition = $item.offset().top
 
-    $('body, html').animate({ scrollTop: $item.offset().top }, 100)
+    if (itemPosition < $(window).scrollTop()) {
+      $('body, html').animate({ scrollTop: itemPosition }, 100)
+    }
   })
 })
