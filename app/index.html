@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>sticky accordion</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+      <ul class="accordion">
+        <li class="accordion__item">
+          <div class="accordion__header sticky">
+            <a href="#collapse-1" data-toggle="collapse" class="collapse-link">Heading 1</a>
+          </div>
+          <div id="collapse-1" class="accordion__content collapse">
+            <div class="fill"></div>
+          </div>
+        </li>
+        <li class="accordion__item">
+          <div class="accordion__header sticky">
+            <a href="#collapse-2" data-toggle="collapse" class="collapse-link">Heading 2</a>
+          </div>
+          <div id="collapse-2" class="accordion__content collapse">
+            <div class="fill"></div>
+          </div>
+        </li>
+        <li class="accordion__item">
+          <div class="accordion__header sticky">
+            <a href="#collapse-3" data-toggle="collapse" class="collapse-link">Heading 3</a>
+          </div>
+          <div id="collapse-3" class="accordion__content collapse">
+            <div class="fill"></div>
+          </div>
+        </li>
+        <li class="accordion__item">
+          <div class="accordion__header sticky">
+            <a href="#collapse-4" data-toggle="collapse" class="collapse-link">Heading 4</a>
+          </div>
+          <div id="collapse-4" class="accordion__content collapse">
+            <div class="fill"></div>
+          </div>
+        </li>
+        <li class="accordion__item">
+          <div class="accordion__header sticky">
+            <a href="#collapse-5" data-toggle="collapse" class="collapse-link">Heading 5</a>
+          </div>
+          <div id="collapse-5" class="accordion__content collapse">
+            <div class="fill"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="fill"></div>
+
+    <!-- build:js scripts/vendor.js -->
+    <script type="text/javascript" src="/node_modules/stickyfilljs/dist/stickyfill.min.js"></script>
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
